@@ -1,0 +1,135 @@
+body, h1, h2, h3, h4, p, a {
+    margin:0;
+    font-size:100%;
+    font-weight:normal;
+    
+  }
+
+  @font-face{
+    src: url(fonts/Roboto-Bold.ttf);
+    font-family: "Roboto-Bold";
+    font-style:Bold;
+  }
+
+  @font-face{
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: "Roboto-Regular";
+    font-style:normal;
+  }
+  @font-face{
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: "Roboto-Light";
+    font-style:normal;
+  }
+
+  @font-face{
+    src: url(fonts/YsabeauSC-Bold.ttf);
+    font-family: "YsabeauSC-Bold";
+    font-style:bold;
+  }
+
+  @font-face{
+    src: url(fonts/YsabeauSC-Light.ttf);
+    font-family: "YsabeauSC-Light";
+    font-style:italic;
+  }
+  .page {
+    max-width: 1736px;
+    max-height: 1076px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .info{
+    background-color: #000000;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 70px;
+    max-height:100%;
+    height:82px ;
+  }
+  .info_purt{
+    color: #ffffff;
+    font-family: "Roboto-Bold";
+    font-size: 46px;
+    text-decoration: none;
+  }
+  .info_purt:last-child{
+    margin-right: 90px;
+  }
+
+  .bord_text{
+    background-color: #ffffff;
+    height: 150px;
+    margin-bottom: 5px; 
+    margin-left: 133px;
+  }
+  .bord_title{
+    font-size: 96px;
+    font-weight: bold;
+    font-family: "Roboto-Bold";
+    text-transform:uppercase;
+    margin-top: 20px;
+  }
+  .bord_subtitle{
+    margin-top: -25px;
+    font-size: 48px;
+    font-family: "Roboto-Light";
+    color:#8B8C8B;
+  }
+  .body_bord_btn{
+    width: 561px;
+    height: 162px;
+    background-color: #000000;
+    color:#ffffff;
+    font-family: "YsabeauSC-Bold";
+    font-size: 64px;
+    border-radius: 64px;
+    border: none;
+    position:absolute;
+    z-index: 3;
+    align-self: flex-end;
+    margin-bottom: 155px;
+    
+  }
+.bord{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    
+  }
+
+.color{
+  background-color: #D17253 ;
+  opacity: 0.3;
+  height: 820px;
+  width: 100%;
+  position:absolute;
+
+  z-index: 2;
+}
+  .bord_main-img{
+    height: 820px;
+    width: 100%;
+    opacity: 0.8;
+  }
+
+
+  /* контакты */
+  .contacts_body{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bord_text{
+    /* display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 85px; */
+  }
+  .contacts_bord_title{
+    /* display:flex;
+    justify-content: flex-end;
+    margin-right: 85px; */
+    font-family: "YsabeauSC-Light";
+    
+  }
