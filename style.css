@@ -75,6 +75,7 @@ body, h1, h2, h3, h4, p, a {
     font-weight: bold;
     font-family: "Roboto-Bold";
     text-transform:uppercase;
+    color:#000000;
     margin-top: 20px;
   }
   .bord_subtitle{
@@ -89,15 +90,19 @@ body, h1, h2, h3, h4, p, a {
     background-color: #000000;
     color:#ffffff;
     font-family: "YsabeauSC-Bold";
-    font-size: 64px;
-    border-radius: 64px;
+    font-size: 75px;
+    text-decoration: none;
     border: none;
+    border-radius: 64px;
     position:absolute;
     z-index: 3;
     align-self: flex-end;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
     margin-bottom: 155px;
-    
   }
+ 
 .bord{
     position:relative;
     display:flex;
@@ -108,19 +113,20 @@ body, h1, h2, h3, h4, p, a {
 .color{
   background-color: #D17253 ;
   opacity: 0.3;
-  height: 820px;
+  height: 798px;
   width: 100%;
   position:absolute;
   z-index: 2;
 }
   .bord_main-img{
-    height: 820px;
+    height:798px;
     width: 100%;
     opacity: 0.8;
   }
 
+ 
 
-  /* контакты */
+  /* о нас*/
 
   .logo{
     font-family: "Roboto-Bold";
@@ -135,30 +141,30 @@ body, h1, h2, h3, h4, p, a {
 
   }
  
-  .contacts-img{
+  .aboutus-img{
     width: 1109px;
     height: 747px;
     margin-top: 165px;
   }
-  .contacts_body{
+  .aboutus_body{
     display: flex;
     justify-content: center;
   }
-  .contact_text{
+  .aboutus_text{
     margin-left:50px;
   }
-  .contacts_bord_title{
+  .aboutus_bord_title{
     font-family: "YsabeauSC-Light";
     margin-bottom: 25px;
     margin-right: 67px;
     justify-self: flex-end;
   }
-  .contacts_bord_subtitle{
+  .aboutus_bord_subtitle{
     margin-top: 15px;
     margin-bottom:52px;
     color:#4C4C4C;
   }
-  .contacts_text{
+  .aboutus_text{
     font-family: "Roboto-Light";
     font-size: 50px;
     color:#4C4C4C;
@@ -180,7 +186,59 @@ body, h1, h2, h3, h4, p, a {
     align-items: center;
     
   }
-
+  .trip_btn{
+    height: 40px;
+    width: 140px;
+    /* display: none; */
+    font-size:15px;
+    font-family: "Roboto-Regular";
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 120px;
+    border-radius: 66px;
+    display:none;
+  }
+ 
+.trip:hover .trip_btn{
+  animation: btn_appear 0.4s ease-out normal forwards ;
+  display: block;
+}
+.price_trip_text{
+  font-family: "Roboto-Bold";
+  font-size:40px;
+  position: absolute;
+  bottom:245px;
+  display:none;
+}
+.trip:hover .price_trip_text{
+  display: block;
+}
+.trip:hover .price_trip_text{
+  animation: text_appear 0.4s ease-out normal forwards;
+}
+@keyframes btn_appear{
+  0%{ transform:scale(0, 0);
+      top: 0; }
+  50%{transform:scale(2, 2);
+      top: 30px}
+  100%{ transform:scale(2, 2);
+        top: 30px} 
+}
+@keyframes text_appear{
+  from{transform: skew(50deg,0 )}
+  to{transform: skew(0deg, 0deg)}
+}
+  .trip:hover .color_cover{
+    background: #ffffff;
+    opacity: .6;
+  }
+   
+  .trip:hover .trip_text{
+    display:none;
+  }
+.india_btn{
+  margin-top:170px;
+}
   .trip_img{
     width: 490px;
     height: 513px;
@@ -202,4 +260,51 @@ body, h1, h2, h3, h4, p, a {
     word-wrap: break-word;
     max-width: 300px;
 
+  }
+
+  /* контакты */
+  .contacts-img{
+    width: 768px;
+    height: 973px;
+  }
+  .contacts_title{
+    font-size:58px;
+    margin-top: 57px;
+  }
+.contats_subtitle{
+  font-size: 38px;
+  font-family: "Roboto-Light";
+  color:#000000;
+}
+.contacts_text{
+  font-size: 48px;
+  font-family: "Roboto-Light";
+  color:#1E1E1E;
+  margin-top: 70px;
+  word-wrap: break-word;
+  max-width: 770px;
+}
+.bold_text{
+  font-weight: bold;
+}
+.contact_bord_subtitle{
+  color:#000000;
+  margin-top: 90px;
+  font-family: "Roboto-Regular";
+}
+
+.media_content{
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+  margin-top: 60px;
+}
+
+  .media_btn{
+    border:none;
+    background: transparent;
+  }
+  .contacts_media{
+    height: 122px;
+    width: 122px;
   }
