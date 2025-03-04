@@ -121,9 +121,7 @@ body, h1, h2, h3, h4, p, a {
 
 
   /* контакты */
-  .info1{
 
-  }
   .logo{
     font-family: "Roboto-Bold";
   }
@@ -136,6 +134,7 @@ body, h1, h2, h3, h4, p, a {
     column-gap: 70px;
 
   }
+ 
   .contacts-img{
     width: 1109px;
     height: 747px;
@@ -145,6 +144,9 @@ body, h1, h2, h3, h4, p, a {
     display: flex;
     justify-content: center;
   }
+  .contact_text{
+    margin-left:50px;
+  }
   .contacts_bord_title{
     font-family: "YsabeauSC-Light";
     margin-bottom: 25px;
@@ -152,26 +154,30 @@ body, h1, h2, h3, h4, p, a {
     justify-self: flex-end;
   }
   .contacts_bord_subtitle{
+    margin-top: 15px;
     margin-bottom:52px;
+    color:#4C4C4C;
   }
   .contacts_text{
     font-family: "Roboto-Light";
     font-size: 50px;
+    color:#4C4C4C;
     margin-top: 45px;
     line-height: 55px;
-    word-wrap: break-word;
-    max-width: 485px;
+    /* word-wrap: break-word;
+    max-width: 485px; */
   }
 
   /* цены */
   .prices_body{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
   }
   .trip{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
   }
 
@@ -184,14 +190,16 @@ body, h1, h2, h3, h4, p, a {
     font-size: 46px;
     font-family: "Roboto-Light";
     text-align: center;
-    /* word-wrap: break-word;
-    max-width: 400px; */
+    word-wrap: break-word;
+    max-width: 400px;
 
   }
 
-  .bord_text{
+  .trip_text{
     text-align: center;
     font-size: 32px;
     font-family: "YsabeauSC-Light";
+    word-wrap: break-word;
+    max-width: 300px;
 
   }
